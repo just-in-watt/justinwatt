@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "status": "qualified",
+  "review": {
+    "reviewed_on": "2026-09-05",
+    "reference": "private-staging-review-2026-09-05"
+  },
+  "files": [
+    ".github/workflows/tests.yml",
+    ".gitignore",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md",
+    "THIRD_PARTY_NOTICES.md",
+    "TRADEMARKS.md",
+    "docs/CONSTITUTION.md",
+    "docs/MANIFESTO.md",
+    "docs/architecture/decisions/0178-preparer-publication-open-source-assainie.md",
+    "docs/architecture/decisions/0188-construire-instantane-public-liste-blanche.md",
+    "docs/governance/justinwatt-name-screening-2026-09-05.md",
+    "docs/governance/public-assets.json",
+    "docs/governance/public-assets.md",
+    "docs/governance/public-snapshot.json",
+    "interface_web/voiture.svg",
+    "modules/audit_publication.py",
+    "modules/audit_securite.py",
+    "modules/construction_instantane_public.py",
+    "modules/decision_batterie.py",
+    "modules/modele_energie.py",
+    "modules/simulateur_batterie.py",
+    "tests/test_audit_publication.py",
+    "tests/test_audit_securite.py",
+    "tests/test_construction_instantane_public.py",
+    "tests/test_decision_batterie.py",
+    "tests/test_modele_energie.py",
+    "tests/test_simulateur_batterie.py"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "excluded_tracked_file_count": 884,
+  "included_files": [
+    {
+      "path": ".github/workflows/tests.yml",
+      "sha256": "26c5bad8a2e332d2c9571b68950f7534e2b19aa169f6dc9c2a13da74e24fe2e2"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "d8a6254b76860249eca68f12980bf184aaaed572736d5e123ae7037f77cc27f7"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "sha256": "b148bc451b977fea7e551a0978c5d96f0e7fc1884468ea90534fe0e0625f6a44"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "e8b0c47d5b0a97fca0bbb0bf499bda03bf9b3d592144878e7b1d11f159357f03"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "README.md",
+      "sha256": "6ecf8498633c7ef43024f7a84764282970e0b71373ab9106fdd60e3734a4a9e1"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "4268c98b68015d5313ed5cee25fc3e992cbf17299f49743e9f35331a821545d4"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "c8e0984ffc09b1a3a1e92ef2883fc85e30f448db8dc9ca1e76959c15d6350dd4"
+    },
+    {
+      "path": "TRADEMARKS.md",
+      "sha256": "980a3613b1cb09e79a2367ea10820ff9dc636e41aecf1528d237bef36778550a"
+    },
+    {
+      "path": "docs/CONSTITUTION.md",
+      "sha256": "381bc21d9488ce75e0c40c10dcc896df64cf35efa12288c168ebad106d6d8a2b"
+    },
+    {
+      "path": "docs/MANIFESTO.md",
+      "sha256": "9e1b13fc0d6b5d8c64f3f605ac87724960de4c83915d2a769b748fd63acb4083"
+    },
+    {
+      "path": "docs/architecture/decisions/0178-preparer-publication-open-source-assainie.md",
+      "sha256": "4c0b622216552e49ab2b6305ec2fa5ccba085bc5e710b520d491e8498e492ec2"
+    },
+    {
+      "path": "docs/architecture/decisions/0188-construire-instantane-public-liste-blanche.md",
+      "sha256": "3384aba48e423c6363d9386c195e23a2e46f49895ca6b04fc253d8077973c408"
+    },
+    {
+      "path": "docs/governance/justinwatt-name-screening-2026-09-05.md",
+      "sha256": "d3e8684048c141e2c3c9ba1546bf76666e602579b9a6422f0669656c60e33ab4"
+    },
+    {
+      "path": "docs/governance/public-assets.json",
+      "sha256": "92b228a53a2b8dc221d4b6ef4da2960047e33ce7952de1c000a0c4b6387512db"
+    },
+    {
+      "path": "docs/governance/public-assets.md",
+      "sha256": "18d4572df66bc897002b9751e024be2e608d09966a6f51a9101ae31f71f13528"
+    },
+    {
+      "path": "docs/governance/public-snapshot.json",
+      "sha256": "93cdf038d927e3e753892d1e79f52314c2d8e7e6889cf3c9492ba80efb8414c7"
+    },
+    {
+      "path": "interface_web/voiture.svg",
+      "sha256": "7b6cf90e3fc5e55eba9fe85e4b7fb50a945812998f51d5978e3050bf9cef173f"
+    },
+    {
+      "path": "modules/audit_publication.py",
+      "sha256": "8dc1ea77266f2b31f1ca97474f2457c7ab42837a17dd5a4ccd1518936951c89b"
+    },
+    {
+      "path": "modules/audit_securite.py",
+      "sha256": "9fd5f31cbdb13c039d1ccc5c2a1c83c2f7786449e64fbb0359de1f766bf73ae6"
+    },
+    {
+      "path": "modules/construction_instantane_public.py",
+      "sha256": "b17ba84033211965ae0e488712c10ddccb7b497b74e738f836e706cdce234012"
+    },
+    {
+      "path": "modules/decision_batterie.py",
+      "sha256": "651ee644e7c936f37b27f5e0c558195e3132d599b7d1f9919a61712c3de20334"
+    },
+    {
+      "path": "modules/modele_energie.py",
+      "sha256": "b1d9eec6a5805294c0cbbc204bfe270a223fd55cb24edf10d9208835753a3967"
+    },
+    {
+      "path": "modules/simulateur_batterie.py",
+      "sha256": "c3afec34393200c8c5162a76c372511868098c053f97f0db78f94e10e3c7eb2b"
+    },
+    {
+      "path": "tests/test_audit_publication.py",
+      "sha256": "049b10d28afcce6478584f1c2922cda087e1f5c5c65c6f8a8df6a0e483aecf9d"
+    },
+    {
+      "path": "tests/test_audit_securite.py",
+      "sha256": "54d2950dd93031e5617c40e8c9fa56a11b77122719fe87e12283152b5e3aa9e7"
+    },
+    {
+      "path": "tests/test_construction_instantane_public.py",
+      "sha256": "b9154dcbfa7ecf6e47eaff3c92b6e96b2f8d7bb78c095fb5e885527792d161d4"
+    },
+    {
+      "path": "tests/test_decision_batterie.py",
+      "sha256": "751468ac93cb23edcfdb8ba565f71f715396fea1dfbe5aae3d657831d1a504aa"
+    },
+    {
+      "path": "tests/test_modele_energie.py",
+      "sha256": "8a4a8b1805210c8e59a010bbabc2c5bc4cbf3ba9dd8ef4a52abe61c65895959b"
+    },
+    {
+      "path": "tests/test_simulateur_batterie.py",
+      "sha256": "0a25a3f2d287c875b38571bd94f61e06e191bdd5dfed28e372bb262132fc4442"
+    }
+  ],
+  "review_reference": "private-staging-review-2026-09-05",
+  "reviewed_on": "2026-09-05",
+  "schema_version": 1,
+  "source_revision": "02fa618e589a0a50a92fe110aad671c9e780bd42"
+}

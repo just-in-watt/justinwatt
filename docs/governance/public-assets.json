@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "path": "interface_web/voiture.svg",
+      "sha256": "7b6cf90e3fc5e55eba9fe85e4b7fb50a945812998f51d5978e3050bf9cef173f",
+      "origin": "original_project_geometry",
+      "license": "Apache-2.0",
+      "reviewed_on": "2026-09-05"
+    }
+  ]
+}
