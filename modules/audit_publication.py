@@ -39,6 +39,10 @@ DOMAINES_COURRIEL_EXEMPLES = {
 }
 
 MANIFESTE_ACTIFS_PUBLICS = Path("docs/governance/public-assets.json")
+# Contact public expressément autorisé le 2026-09-21 (CONTRIBUTING.md).
+# L'empreinte évite de dupliquer l'adresse hors des documents de contact.
+CONTACT_PUBLIC_SHA256 = "e04494dc9e2d6a2178f3d9ed25e2fdbe57f5395de5c1530c5e3357fb8a2a5c57"
+DOCUMENTS_CONTACT_PUBLIC = {Path("SECURITY.md"), Path("CODE_OF_CONDUCT.md")}
 EXTENSIONS_ACTIFS_PUBLICS = {
     ".gif",
     ".ico",
@@ -139,6 +143,12 @@ def analyser_contenu(chemin, contenu):
 
         for match in COURRIEL.finditer(ligne):
             if match.group(0).lower().endswith(".service"):
+                continue
+            if (
+                Path(chemin) in DOCUMENTS_CONTACT_PUBLIC
+                and hashlib.sha256(match.group(0).encode("utf-8")).hexdigest()
+                == CONTACT_PUBLIC_SHA256
+            ):
                 continue
             if match.group(1).lower() not in DOMAINES_COURRIEL_EXEMPLES:
                 categories.add("courriel_personnel_possible")

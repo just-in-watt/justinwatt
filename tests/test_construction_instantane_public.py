@@ -151,7 +151,8 @@ class TestConstructionInstantanePublic(unittest.TestCase):
         self.assertIn("private operational repository", contribution)
         self.assertIn("automatically deployed", contribution)
         self.assertIn("private vulnerability reporting", securite)
-        self.assertIn("publication gate remains closed", securite)
+        self.assertIn("https://github.com/just-in-watt/justinwatt/security/advisories/new", securite)
+        self.assertIn("A public issue is never an acceptable substitute", securite)
 
     def test_refuse_joker_traversal_doublon_et_ordre_ambigu(self):
         cas = {

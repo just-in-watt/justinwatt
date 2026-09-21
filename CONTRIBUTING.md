@@ -27,6 +27,12 @@ tailnet names, personal file paths, personal screenshots or raw household logs.
 Use RFC 5737 documentation networks, locally administered example MAC addresses
 and explicitly fictitious data in examples and tests.
 
+The maintainer explicitly authorized the published moderation contact on
+2026-09-21. The publication audit permits only that exact email in the root
+SECURITY.md and CODE_OF_CONDUCT.md files; it does not allow other addresses,
+other paths or secrets on the same line. This exception does not apply to
+household data. Changing the contact requires renewed consent and review.
+
 Do not disclose a vulnerability in an issue or pull request. Follow
 `SECURITY.md`; the public contribution cycle will remain closed until a private
 reporting channel has been enabled and verified.
