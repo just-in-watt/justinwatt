@@ -3,7 +3,7 @@
   "status": "qualified",
   "review": {
     "reviewed_on": "2026-09-21",
-    "reference": "contribution-rules-user-validation-2026-09-21"
+    "reference": "public-opening-and-contact-user-authorization-2026-09-21"
   },
   "files": [
     ".github/ISSUE_TEMPLATE/bug.yml",
