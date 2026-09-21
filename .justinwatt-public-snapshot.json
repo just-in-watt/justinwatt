@@ -1,5 +1,5 @@
 {
-  "excluded_tracked_file_count": 926,
+  "excluded_tracked_file_count": 1,
   "included_files": [
     {
       "path": ".github/ISSUE_TEMPLATE/bug.yml",
@@ -27,11 +27,11 @@
     },
     {
       "path": "CODE_OF_CONDUCT.md",
-      "sha256": "fcdad25e9b6bb4d69d3e97270c42885c9f6f961664e970562c189acfd7f64a8e"
+      "sha256": "0b7b63ef47e34631af151c0fa1c1b89b61085d42b1c91d5994656dc021e5d188"
     },
     {
       "path": "CONTRIBUTING.md",
-      "sha256": "b9cc875b7c4461b99cd2f1d2c6fdebad4c4fb426aef12bfca6a4cc138c79a440"
+      "sha256": "e1ce49fee9b3378bc95129fbaf8d2608ca925ddb63e04a5f9aeb8f33562a8667"
     },
     {
       "path": "LICENSE",
@@ -43,7 +43,7 @@
     },
     {
       "path": "SECURITY.md",
-      "sha256": "e16f29b1087e6e0aa9eaef5e5f8c0cfe5bf07262f7f597cf496dfe5f05860ae2"
+      "sha256": "5f79d54d6824732d52d13ce936bc129dbcff9a4fe818e9c5137462632e0d93aa"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -87,7 +87,7 @@
     },
     {
       "path": "docs/governance/public-snapshot.json",
-      "sha256": "8f8a22895bc006a8e6a0bd501a01c02eb1da4fabbcace3262c75c4f2272858c0"
+      "sha256": "36231f0e728341930c6e3c95f7e3370ddae52a6c553c8c8c0d01f98ef6c7f76e"
     },
     {
       "path": "interface_web/voiture.svg",
@@ -95,7 +95,7 @@
     },
     {
       "path": "modules/audit_publication.py",
-      "sha256": "8dc1ea77266f2b31f1ca97474f2457c7ab42837a17dd5a4ccd1518936951c89b"
+      "sha256": "e4f63404817cc619977378308038825ea5f61c03aea6dff632901935ec3671d0"
     },
     {
       "path": "modules/audit_securite.py",
@@ -119,7 +119,7 @@
     },
     {
       "path": "tests/test_audit_publication.py",
-      "sha256": "049b10d28afcce6478584f1c2922cda087e1f5c5c65c6f8a8df6a0e483aecf9d"
+      "sha256": "fef55b07f1a9a81ba560b1086947a697f1b3542ef6cd1747e30a2f75753f0347"
     },
     {
       "path": "tests/test_audit_securite.py",
@@ -127,7 +127,7 @@
     },
     {
       "path": "tests/test_construction_instantane_public.py",
-      "sha256": "2d321952da6928b0b6f00662c881a2d2cf44aa9a9f478487942cbb7f04326572"
+      "sha256": "52c3e808bd560f683efef59ca0bc417a5bc1b30f1bdbce0400d4f234f13738df"
     },
     {
       "path": "tests/test_decision_batterie.py",
@@ -142,8 +142,8 @@
       "sha256": "0a25a3f2d287c875b38571bd94f61e06e191bdd5dfed28e372bb262132fc4442"
     }
   ],
-  "review_reference": "contribution-rules-user-validation-2026-09-21",
+  "review_reference": "public-opening-and-contact-user-authorization-2026-09-21",
   "reviewed_on": "2026-09-21",
   "schema_version": 1,
-  "source_revision": "3d1845fc14bfa2fb420210e4ef786faea5b4b554"
+  "source_revision": "435a58389814356592fab09cf55279e801a7f6af"
 }
