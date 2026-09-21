@@ -15,6 +15,7 @@ Harassment, threats, discrimination, publication of personal data and attempts
 to gain access to a real installation are not tolerated.
 
 Maintainers may hide content, close a discussion or restrict a participant to
-protect the community. Conduct incidents must be reported through a private
-moderation channel configured on the public platform, never in an issue. The
-initial public release remains blocked until this channel exists.
+protect the community. Report conduct incidents privately by email to
+[djekyll@me.com](mailto:djekyll@me.com), never in a public issue. Include only
+the information needed to understand the incident; do not send household logs
+or credentials. This contact was designated by the maintainer for moderation.

@@ -3,12 +3,13 @@
 ## Reporting a vulnerability
 
 Do not publish a vulnerability, secret or detail about a real installation in
-an issue, discussion or pull request. GitHub private vulnerability reporting
-must be enabled, verified and linked from this section before the first public
-release. Until that channel exists, the publication gate remains closed; a
-public issue is never an acceptable substitute.
+an issue, discussion or pull request. Use GitHub's
+[private vulnerability reporting form](https://github.com/just-in-watt/justinwatt/security/advisories/new).
+If the form is unavailable, contact [djekyll@me.com](mailto:djekyll@me.com)
+privately to arrange a confidential report. Do not send credentials or raw
+household traces. A public issue is never an acceptable substitute.
 
-When the private channel is available, provide only the minimum description,
+Provide only the minimum description,
 affected version, sanitized reproduction conditions and possible impact. Never
 include a household identifier or raw trace. Maintainers will acknowledge the
 report and communicate a response appropriate to its severity without

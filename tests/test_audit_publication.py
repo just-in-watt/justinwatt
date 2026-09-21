@@ -14,6 +14,21 @@ from modules.audit_publication import (
 
 class TestAuditPublication(unittest.TestCase):
 
+    def test_contact_public_limite_aux_deux_documents(self):
+        contact = "djekyll" + "@" + "me.com"
+        for chemin in ("SECURITY.md", "CODE_OF_CONDUCT.md"):
+            self.assertEqual(analyser_contenu(Path(chemin), contact), [])
+            violations = analyser_contenu(Path(chemin), contact + " autre@" + "me.com")
+            self.assertEqual([v.categorie for v in violations], ["courriel_personnel_possible"])
+        for chemin in ("README.md", "docs/SECURITY.md", "/SECURITY.md"):
+            self.assertEqual(len(analyser_contenu(Path(chemin), contact)), 1)
+
+    def test_contact_public_ne_masque_pas_un_secret(self):
+        contact = "djekyll" + "@" + "me.com"
+        contenu = contact + " gh" + "p_" + "A" * 30
+        violations = analyser_contenu(Path("SECURITY.md"), contenu)
+        self.assertEqual([v.categorie for v in violations], ["jeton_github"])
+
     def ecrire_manifeste_actifs(self, racine, actifs):
         manifeste = racine / "docs/governance/public-assets.json"
         manifeste.parent.mkdir(parents=True)
