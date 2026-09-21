@@ -1,21 +1,20 @@
-# Code de conduite
+# Code of Conduct
 
-JustInWatt accueille les contributions respectueuses, précises et orientées
-vers la sécurité des personnes, des données et des équipements.
+JustInWatt welcomes respectful, precise contributions that protect people,
+data and equipment.
 
-Les participants s'engagent à :
+Participants agree to:
 
-- discuter des idées et du code sans attaque personnelle ni harcèlement ;
-- accueillir les niveaux d'expérience, origines et points de vue différents ;
-- protéger les informations privées rencontrées pendant une revue ;
-- déclarer les conflits d'intérêts et les limites d'une preuve ;
-- accepter qu'une exigence de sécurité puisse ralentir ou bloquer une fusion.
+- discuss ideas and code without personal attacks or harassment;
+- welcome different experience levels, backgrounds and viewpoints;
+- protect private information encountered during review;
+- disclose conflicts of interest and the limits of available evidence;
+- accept that a safety requirement may slow or block a merge.
 
-Le harcèlement, les menaces, la publication de données personnelles, la
-discrimination et les tentatives d'obtenir l'accès à une installation réelle ne
-sont pas tolérés.
+Harassment, threats, discrimination, publication of personal data and attempts
+to gain access to a real installation are not tolerated.
 
-Les mainteneurs peuvent masquer un contenu, fermer une discussion ou restreindre
-un participant afin de protéger la communauté. Les incidents doivent être
-signalés par un canal privé de modération configuré sur la plateforme publique,
-jamais dans une issue. L'absence de ce canal bloque la publication initiale.
+Maintainers may hide content, close a discussion or restrict a participant to
+protect the community. Conduct incidents must be reported through a private
+moderation channel configured on the public platform, never in an issue. The
+initial public release remains blocked until this channel exists.

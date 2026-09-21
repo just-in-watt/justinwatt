@@ -1,0 +1,66 @@
+name: Bug report
+description: Report a reproducible problem using only sanitized data
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include credentials, real network identifiers, household logs or vulnerability details. Security reports must use the private channel described in SECURITY.md; that channel must exist before public issues are enabled.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the observed behaviour and its user impact.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: Describe the safe and documented behaviour you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Sanitized reproduction
+      description: Provide minimal offline steps with fictitious inputs or simulators.
+      placeholder: No real IP address, MAC address, account, coordinate, screenshot or raw household trace.
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: JustInWatt revision
+      description: Provide a public release, tag or commit SHA when known.
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Tested environment
+      options:
+        - Offline simulation
+        - Public test suite
+        - Documentation only
+        - Other sanitized environment
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Safety and privacy impact
+      description: State whether the problem could affect data, permissions, decisions or equipment.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Submission checks
+      options:
+        - label: I removed all secrets, personal data and real household identifiers.
+          required: true
+        - label: I did not run a destructive test or command on equipment I do not own.
+          required: true
+        - label: This report does not disclose a security vulnerability.
+          required: true

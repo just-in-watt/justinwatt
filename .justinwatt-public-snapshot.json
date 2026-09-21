@@ -1,6 +1,22 @@
 {
-  "excluded_tracked_file_count": 884,
+  "excluded_tracked_file_count": 926,
   "included_files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug.yml",
+      "sha256": "1526d1c4e8a381c24031018aa241af49892553f0c72a3b2781134b6c63494a72"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "8b09e7df09fc7534371988062769ee427af2954a02c04c763e8a8005be0f2be4"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature.yml",
+      "sha256": "dea7ec4f5fff2242589601d0ca8761aac691d582b54c2683ec7484675385e650"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "sha256": "a7a7c4fe57ca52baabec56fcdb7f48e91e3069a3b4176336a06a9626aa7e7b53"
+    },
     {
       "path": ".github/workflows/tests.yml",
       "sha256": "26c5bad8a2e332d2c9571b68950f7534e2b19aa169f6dc9c2a13da74e24fe2e2"
@@ -11,11 +27,11 @@
     },
     {
       "path": "CODE_OF_CONDUCT.md",
-      "sha256": "b148bc451b977fea7e551a0978c5d96f0e7fc1884468ea90534fe0e0625f6a44"
+      "sha256": "fcdad25e9b6bb4d69d3e97270c42885c9f6f961664e970562c189acfd7f64a8e"
     },
     {
       "path": "CONTRIBUTING.md",
-      "sha256": "e8b0c47d5b0a97fca0bbb0bf499bda03bf9b3d592144878e7b1d11f159357f03"
+      "sha256": "b9cc875b7c4461b99cd2f1d2c6fdebad4c4fb426aef12bfca6a4cc138c79a440"
     },
     {
       "path": "LICENSE",
@@ -27,7 +43,7 @@
     },
     {
       "path": "SECURITY.md",
-      "sha256": "4268c98b68015d5313ed5cee25fc3e992cbf17299f49743e9f35331a821545d4"
+      "sha256": "e16f29b1087e6e0aa9eaef5e5f8c0cfe5bf07262f7f597cf496dfe5f05860ae2"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -54,6 +70,10 @@
       "sha256": "3384aba48e423c6363d9386c195e23a2e46f49895ca6b04fc253d8077973c408"
     },
     {
+      "path": "docs/architecture/decisions/0202-separer-cycle-contribution-public-et-exploitation-privee.md",
+      "sha256": "774c46e22ea6dbeb762f8a27ad82c25792e3e2e8fe62d3ee788efdb16290ab1d"
+    },
+    {
       "path": "docs/governance/justinwatt-name-screening-2026-09-05.md",
       "sha256": "d3e8684048c141e2c3c9ba1546bf76666e602579b9a6422f0669656c60e33ab4"
     },
@@ -67,7 +87,7 @@
     },
     {
       "path": "docs/governance/public-snapshot.json",
-      "sha256": "93cdf038d927e3e753892d1e79f52314c2d8e7e6889cf3c9492ba80efb8414c7"
+      "sha256": "8f8a22895bc006a8e6a0bd501a01c02eb1da4fabbcace3262c75c4f2272858c0"
     },
     {
       "path": "interface_web/voiture.svg",
@@ -107,7 +127,7 @@
     },
     {
       "path": "tests/test_construction_instantane_public.py",
-      "sha256": "b9154dcbfa7ecf6e47eaff3c92b6e96b2f8d7bb78c095fb5e885527792d161d4"
+      "sha256": "2d321952da6928b0b6f00662c881a2d2cf44aa9a9f478487942cbb7f04326572"
     },
     {
       "path": "tests/test_decision_batterie.py",
@@ -122,8 +142,8 @@
       "sha256": "0a25a3f2d287c875b38571bd94f61e06e191bdd5dfed28e372bb262132fc4442"
     }
   ],
-  "review_reference": "private-staging-review-2026-09-05",
-  "reviewed_on": "2026-09-05",
+  "review_reference": "contribution-rules-user-validation-2026-09-21",
+  "reviewed_on": "2026-09-21",
   "schema_version": 1,
-  "source_revision": "02fa618e589a0a50a92fe110aad671c9e780bd42"
+  "source_revision": "3d1845fc14bfa2fb420210e4ef786faea5b4b554"
 }

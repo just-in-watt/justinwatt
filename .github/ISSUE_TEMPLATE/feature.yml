@@ -1,0 +1,60 @@
+name: Feature request
+description: Propose an outcome, capability or public contract before implementation
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the user outcome before a technical solution. New hardware control, transports and durable architecture decisions require a separate scope and safety review.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and intended outcome
+      description: Who needs this, what should improve, and how would success be observed?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed scope
+      description: Identify the smallest useful offline or simulated increment.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Primary area
+      options:
+        - Generic contract or model
+        - Deterministic decision logic
+        - Offline simulator or tests
+        - Documentation
+        - Hardware integration requiring prior review
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Include simpler options and the cost of doing nothing.
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and missing evidence
+      description: Cover safety, privacy, maintainability, compatibility and rollback.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Submission checks
+      options:
+        - label: This proposal contains no secret, personal data or real household identifier.
+          required: true
+        - label: I understand that discussion does not authorize physical control or deployment.
+          required: true
