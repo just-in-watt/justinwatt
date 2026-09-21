@@ -1,43 +1,56 @@
-# Contribuer à JustInWatt
+# Contributing to JustInWatt
 
-Merci de contribuer à JustInWatt. Le projet coordonne des équipements
-énergétiques réels : une modification apparemment anodine peut affecter la vie
-privée, la sécurité ou la durée de vie d'un appareil.
+Thank you for helping improve JustInWatt. The project coordinates real energy
+equipment, so a seemingly small change can affect privacy, safety or device
+lifespan.
 
-## Avant de commencer
+## Before you start
 
-1. Lire `AGENTS.md`, `docs/DEVELOPER_GUIDE.md`, `docs/CONSTITUTION.md` et les
-   références qu'ils imposent pour le domaine modifié.
-2. Ouvrir une issue pour une nouvelle capacité ou une décision durable afin de
-   vérifier son périmètre et ses risques.
-3. Travailler sur une branche dédiée et garder chaque contribution ciblée.
-4. Documenter une décision validée avant son implémentation.
+1. Read this guide, `docs/CONSTITUTION.md` and the public architecture or
+   decision documents relevant to the area you plan to change.
+2. Open a feature request before implementing a new capability, hardware
+   integration or durable architectural decision.
+3. Work from the public `main` branch in a dedicated branch or fork and keep the
+   pull request focused.
+4. Record an accepted decision in the relevant documentation before its code.
 
-## Données et équipements interdits dans une contribution
+The first public scope is intentionally small. Offline contracts, deterministic
+logic, simulations, tests and generic documentation are welcome. A hardware
+transport, physical executor, deployment recipe or household-specific proof
+needs a separate scope and security review before implementation.
 
-Ne joignez jamais de secret, jeton, cookie, credential, coordonnée, adresse
-domestique, MAC réelle, numéro de série, nom de tailnet, chemin nominatif,
-capture personnelle ou journal brut. Utilisez les plages RFC 5737 et des données
-fictives explicites dans les exemples et les tests.
+## Never include real household data
 
-Une pull request ne doit pas appeler une installation réelle, déclencher une
-commande physique, contourner une protection constructeur ou augmenter un
-niveau d'autonomie. Les tests doivent employer des doubles, simulateurs ou
-traces assainies. Une qualification matérielle reste une procédure privée,
-supervisée et séparée.
+Do not submit secrets, tokens, cookies, credentials, coordinates, home
+addresses, real private-network addresses, MAC addresses, serial numbers,
+tailnet names, personal file paths, personal screenshots or raw household logs.
+Use RFC 5737 documentation networks, locally administered example MAC addresses
+and explicitly fictitious data in examples and tests.
 
-## Qualité attendue
+Do not disclose a vulnerability in an issue or pull request. Follow
+`SECURITY.md`; the public contribution cycle will remain closed until a private
+reporting channel has been enabled and verified.
 
-- conserver les frontières `observer → comprendre → décider → expliquer →
-  agir` ;
-- représenter les capacités par contrat plutôt que par marque ;
-- fermer prudemment en cas de donnée absente, périmée ou ambiguë ;
-- ajouter les tests proportionnés au risque et exécuter la suite complète ;
-- mettre à jour la documentation, la couverture fonctionnelle et le changelog
-  lorsque leur contrat change ;
-- déclarer la provenance et la licence de toute dépendance ou de tout actif.
+## Safety boundary
 
-Commandes de vérification courantes :
+A pull request must not contact a real installation, trigger a physical command,
+bypass a manufacturer protection or raise an autonomy level. Tests use fakes,
+simulators or reviewed sanitized traces. Hardware qualification remains a
+private, supervised and separate procedure.
+
+Preserve the project boundaries:
+
+- `observe → understand → decide → explain → act`;
+- capability contracts instead of brand-specific decisions in the core;
+- fail closed when data is missing, stale or ambiguous;
+- keep observation, decision, execution and independent confirmation separate;
+- never turn a successful simulation or CI run into permission to control a
+  device.
+
+## Development and validation
+
+Add tests proportional to the risk and run the relevant checks locally. The
+standard offline checks are:
 
 ```bash
 python3 -m modules.audit_publication
@@ -45,13 +58,24 @@ python3 -m modules.audit_securite
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
 ```
 
-## Pull request
+Update documentation, functional coverage and release notes when their contract
+changes. Declare the origin and licence of every dependency or asset. If a test
+cannot reproduce an observed failure, explain the closest sanitized proof and
+the remaining gap in the pull request.
 
-Décrivez le problème, la décision, les risques, le retour arrière, les fichiers
-touchés et les tests réellement exécutés. Une CI verte ne remplace pas la revue
-humaine. Les mainteneurs peuvent demander une preuve supplémentaire ou refuser
-un changement qui élargit implicitement les autorisations.
+## Pull request expectations
 
-En soumettant une contribution destinée à être incluse, vous acceptez qu'elle
-soit fournie sous la licence Apache-2.0 du projet, sauf mention écrite explicite
-contraire avant sa soumission.
+Complete the pull request template. It asks for the problem and decision, scope,
+risks, privacy impact, rollback, modified files and tests actually run. A green
+CI does not replace human review. Maintainers may request additional evidence or
+decline any change that implicitly expands permissions, public scope or claimed
+compatibility.
+
+The public repository and the private operational repository have separate
+histories. Maintainers import accepted public commits into a clean private
+worktree and rerun the private suite; no pull request is automatically deployed
+to a home, host or device.
+
+By submitting a contribution for inclusion, you agree that it is provided under
+the project's Apache-2.0 licence unless a different written agreement is made
+before submission.

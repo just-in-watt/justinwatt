@@ -2,10 +2,14 @@
   "schema_version": 1,
   "status": "qualified",
   "review": {
-    "reviewed_on": "2026-09-05",
-    "reference": "private-staging-review-2026-09-05"
+    "reviewed_on": "2026-09-21",
+    "reference": "contribution-rules-user-validation-2026-09-21"
   },
   "files": [
+    ".github/ISSUE_TEMPLATE/bug.yml",
+    ".github/ISSUE_TEMPLATE/config.yml",
+    ".github/ISSUE_TEMPLATE/feature.yml",
+    ".github/PULL_REQUEST_TEMPLATE.md",
     ".github/workflows/tests.yml",
     ".gitignore",
     "CODE_OF_CONDUCT.md",
@@ -19,6 +23,7 @@
     "docs/MANIFESTO.md",
     "docs/architecture/decisions/0178-preparer-publication-open-source-assainie.md",
     "docs/architecture/decisions/0188-construire-instantane-public-liste-blanche.md",
+    "docs/architecture/decisions/0202-separer-cycle-contribution-public-et-exploitation-privee.md",
     "docs/governance/justinwatt-name-screening-2026-09-05.md",
     "docs/governance/public-assets.json",
     "docs/governance/public-assets.md",

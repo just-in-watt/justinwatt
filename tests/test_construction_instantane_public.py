@@ -101,6 +101,58 @@ class TestConstructionInstantanePublic(unittest.TestCase):
             contenu,
         )
 
+    def test_candidat_contribution_publique_inclut_le_cycle_revu(self):
+        racine = Path(__file__).resolve().parents[1]
+
+        manifeste = charger_manifeste(racine)
+
+        attendus = {
+            Path(".github/ISSUE_TEMPLATE/bug.yml"),
+            Path(".github/ISSUE_TEMPLATE/config.yml"),
+            Path(".github/ISSUE_TEMPLATE/feature.yml"),
+            Path(".github/PULL_REQUEST_TEMPLATE.md"),
+            Path(
+                "docs/architecture/decisions/"
+                "0202-separer-cycle-contribution-public-et-exploitation-privee.md"
+            ),
+        }
+        self.assertEqual(len(manifeste.fichiers), 35)
+        self.assertTrue(attendus.issubset(manifeste.fichiers))
+        if manifeste.statut == "draft":
+            self.assertIsNone(manifeste.date_revue)
+            self.assertIsNone(manifeste.reference_revue)
+        else:
+            self.assertIsNotNone(manifeste.date_revue)
+            self.assertTrue(manifeste.reference_revue)
+
+    def test_modeles_contribution_rappellent_les_frontieres_publiques(self):
+        racine = Path(__file__).resolve().parents[1]
+        modele_pr = (racine / ".github/PULL_REQUEST_TEMPLATE.md").read_text(
+            encoding="utf-8"
+        )
+        anomalie = (
+            racine / ".github/ISSUE_TEMPLATE/bug.yml"
+        ).read_text(encoding="utf-8")
+        proposition = (
+            racine / ".github/ISSUE_TEMPLATE/feature.yml"
+        ).read_text(encoding="utf-8")
+        configuration = (
+            racine / ".github/ISSUE_TEMPLATE/config.yml"
+        ).read_text(encoding="utf-8")
+        contribution = (racine / "CONTRIBUTING.md").read_text(encoding="utf-8")
+        securite = (racine / "SECURITY.md").read_text(encoding="utf-8")
+
+        self.assertIn("does not send a physical command", modele_pr)
+        self.assertIn("real household installation", modele_pr)
+        self.assertIn("private channel", anomalie)
+        self.assertIn("no secret, personal data", proposition)
+        self.assertIn("blank_issues_enabled: false", configuration)
+        self.assertIn("contact_links: []", configuration)
+        self.assertIn("private operational repository", contribution)
+        self.assertIn("automatically deployed", contribution)
+        self.assertIn("private vulnerability reporting", securite)
+        self.assertIn("publication gate remains closed", securite)
+
     def test_refuse_joker_traversal_doublon_et_ordre_ambigu(self):
         cas = {
             "joker": (["*.py"], "chemin_invalide"),
